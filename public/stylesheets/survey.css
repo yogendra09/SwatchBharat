@@ -1,0 +1,39 @@
+
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 3px 6px 6px #dadada, -3px 6px 6px #dadada;
+    width: 40vw;
+    padding: 20px 20px;
+}
+button{
+    margin-top: 20px;
+    height: 7vh;
+    width: 22vw;
+    background-color: #137CCE;
+    color: aliceblue;
+    border: none;
+    border-radius: 10px;
+}
+.Survey_options__KdBHf{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+@media (max-width: 500px) {
+    .container{
+      width: 90vw;
+    }
+    .container input{
+        margin-left: 12px;
+    }
+    button{
+      width: 22vw;
+      margin-left: 30vw;
+      font-size: 16px;
+    }
+  .Survey_questionTitle__6gX8X{
+    color: #137CCE;
+  }
+  
+  }

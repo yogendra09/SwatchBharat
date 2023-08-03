@@ -1,0 +1,85 @@
+#txt1{
+    display: flex;
+   text-align: center;
+    flex-direction: column;
+    justify-content: center;
+
+}
+#txt2{
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+}
+#txt1 h1:nth-child(1){
+  line-height: 32px;
+  color: #0B35A7;
+  font-weight: 900;
+}
+#txt1 h1:nth-child(2){
+  line-height: 32px;
+  color:#137CCE;
+  font-weight: 900;
+}
+#txt2{
+    display: flex;
+  align-items: center;
+   flex-direction: column;
+
+}
+
+#card{
+  margin-top: 20px;
+  height:90vh ;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 3px 6px 6px #dadada, -3px 6px 6px #dadada;
+  padding: 15px 0px;
+}
+#card button{
+  padding: 15px;
+  border: none;
+  background-color: #137CCE;
+  color: #fff;
+  border-radius: 10px;
+  width: 28vw;
+  font-size: 20px;
+ 
+}
+
+#card #one{
+  height: 8vw;
+  width: 15vw;
+  scale: .8;
+  object-fit: cover;
+}
+#card #two{
+  height: 20vw;
+  width: 25vw;
+  scale: .8;
+  object-fit: cover;
+}
+@media (max-width: 500px) {
+  #card{
+    width: 90vw;
+    gap: 10px;
+    min-height: 60vh;
+  }
+  #card #one{
+    height: 25vw;
+    width: 50vw;
+    scale: .8;
+    object-fit: cover;
+  }
+  #card button{
+    width: 70vw;
+  }
+  #card #two{
+   
+    height: 70vw;
+    width: 80vw;
+    object-fit: contain;
+  }
+}

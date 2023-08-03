@@ -1,0 +1,42 @@
+#card{
+    text-align: center;
+    margin-top: 30px;
+    width: 32vw;
+    box-shadow: 3px 6px 6px #dadada, -3px 6px 6px #dadada;
+    min-height: 70vh;
+    padding: 20px 20px;
+}
+#card p{
+    width: 90%;
+}
+#card h1{
+    font-weight: 400;
+    opacity: .7;
+    margin-bottom: 20px;
+}
+#card p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#card button{
+    height: 7vh;
+    font-size: 18px;
+    color: #137CCE;
+    margin-top: 20px;
+    width: 28vw;
+    border-radius: 10px;
+    background-color: #fff;
+    border: 1px solid   #137CCE;
+}
+
+@media (max-width: 500px) {
+    #card{
+      width: 90vw;
+    }
+     #card img{
+        height: 200px;
+        width: 270px;
+       
+     }
+  
+  }

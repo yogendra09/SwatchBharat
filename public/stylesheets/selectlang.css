@@ -1,0 +1,56 @@
+#card{
+    margin-top: 30px;
+    padding: 20px 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    min-height: 50vh;
+    width: 30%;
+   
+}
+#card h3{
+    font-size: 20px;
+}
+#language{
+    margin-top: 12px;
+    height: 7vh;
+    padding: 0px 10px;
+    background-color:#fff ;
+    border: 1px solid #137CCE;
+    outline: none;
+    border-radius: 10px;
+    color: #137CCE;
+    width: 26vw;
+
+}
+
+#card button{
+    margin-top: 15px;
+    border: none;
+    outline: none;
+    color: #fff;
+    height: 7vh;
+    width: 26vw;
+    border-radius: 10px;
+    background-color: #137CCE;
+}
+#txt{
+    margin-bottom: 10px;
+}
+#card #txt p{
+    margin-top:15px ;
+}
+
+@media (max-width: 500px) {
+    #card{
+      width: 90vw;
+    }
+   #card button{
+      width: 60vw;
+    }
+    #language{
+        width: 70vw;
+        font-size: 20px;
+    }
+  }

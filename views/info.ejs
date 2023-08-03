@@ -1,0 +1,44 @@
+<% include ./partials/header.ejs %>
+<link rel="stylesheet" href="/stylesheets/info.css">
+
+<div id="card">
+    <form action="/survey">
+    <h4>Location</h4>
+    <select name="selectedState" id="selectedState" class="inpt"><option value="23" class="text-center" text="MADHYA PRADESH">MADHYA PRADESH</option></select>
+
+    <select name="selectedDistrict" id="selectedDistrict" class="inpt"><option value="424" text="MORENA" class="text-center">MORENA</option></select>
+
+    <select name="selectedCity" id="selectedCity" class="inpt"><option value="802083" text="MORENA" class="text-center">MORENA</option></select>
+
+    <input type="text" class="inpt" name="location" placeholder="Location Name">
+
+    <p class="p">Have You Been A Resident Of This Urban Local Body / City</p>
+    <div class="txt">
+        <label><input  required type="radio" name="is_resident" value="Yes"><span>Yes</span></label>  
+      <label><input  type="radio" name="is_resident" value="No"><span>No</span></label>
+    </div>
+
+    <p class="p">Gender Of Respondent</p>
+   
+    <div class="txt">
+        <label><input  required type="radio"  name="gender" value="M"><span>Male</span></label>
+        <label><input  required type="radio"  name="gender" value="F"><span>Female</span></label>
+    </div>
+
+    <p>Age</p>
+    <input type="number" class="inpt" required  id="age" name="age" min="15" max="99">
+
+    <button>Start Survey</button>
+</form>
+</div>
+
+
+
+
+
+
+
+
+
+
+<% include ./partials/footer.ejs %>

@@ -1,0 +1,70 @@
+#card{
+    margin-top: 30px;
+   min-height: 60vh;
+   min-width: 35vw;
+   box-shadow: 3px 6px 6px #dadada, -3px 6px 6px #dadada;
+   padding: 20px 0px;
+ 
+}
+#card h4{
+    font-weight: 400;
+    font-size: 20px;
+}
+#card form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+#card form .inpt{
+    height: 7vh;
+    border-radius: 10px;
+    padding: 0px 15px;
+    width: 22vw;
+    border: none;
+    outline: none;
+    background-color: aliceblue;
+
+}
+#card form button{
+    margin-top: 20px;
+    height:3.5vw;
+    border-radius: 10px;
+    width: 22vw;
+    border: 1px solid #137CCE;
+    background-color: #fff;
+    color: #137CCE;
+}
+
+
+@media (max-width: 500px) {
+    #card{
+      padding: 20px 20px;
+    }
+
+    #card form .inpt{
+       
+        width: 80%;
+    }
+    #card form .txt{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        scale: 1.2;
+    }
+    .p{
+        width: 70%;
+        text-align: center;
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+    span{
+        margin-left: 5px;
+        
+    }
+    #card form button{
+        height: 6vh;
+        width: 72vw;
+    }
+  
+}
