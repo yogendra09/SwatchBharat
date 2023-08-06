@@ -174,7 +174,8 @@ router.post('/test',async function(req,res,next){
       res.redirect("/thanks")
     
   }catch(err){
-    res.send(err);
+    console.log(err);
+   res.redirect("/")
   }
 
 })
