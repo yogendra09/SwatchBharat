@@ -20,6 +20,9 @@
   color:#137CCE;
   font-weight: 900;
 }
+#txt1 h2,h4{
+  font-weight: 600;
+}
 #txt2{
     display: flex;
   align-items: center;
