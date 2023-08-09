@@ -1,0 +1,42 @@
+<% include ./partials/header.ejs %>
+<link rel="stylesheet" href="/stylesheets/register.css">
+
+<div id="card">
+    <img src="https://vfcity-prod.sbmurban.org/static/media/glasses-icon.994a4de177065596633e1879922e8d1a.svg" alt="">
+    <h3>Feedback</h3>
+    <div id="txt1">
+        <h4>Please enter your mobile number.</h4>
+    </div>
+     <div id="inpt">
+        <form action="/selectlanguage" method="post">
+        <label for="">Mobile Number</label>
+        <input  required type="number" name="number">
+        <button type="submit">Continue</button>
+    </form>
+     </div>
+
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js" integrity="sha512-uMtXmF28A2Ab/JJO2t/vYhlaa/3ahUOgj1Zf27M5rOo8/+fcTUVH0/E0ll68njmjrLqOBjXM3V9NiPFL5ywWPQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+      var inpt = document.querySelector("input");
+
+     document.querySelector("button").disabled = true  ;
+      inpt.addEventListener("input",async function(){
+        if((inpt.value).trim().length >0){
+
+            var data = await axios.post(`/check/${inpt.value}`);
+            if(data.data.valid){
+
+                document.querySelector("button").disabled = false ;
+
+            }
+        }else{
+           console.log(data);   
+        }
+        
+      })
+
+ 
+
+</script>
+<% include ./partials/footer.ejs %>

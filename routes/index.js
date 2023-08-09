@@ -9,10 +9,13 @@ router.get('/', function(req, res, next) {
   res.render('index');
 });
 
-
+router.get('/register', function(req, res, next) {
+  
+  res.render('register');
+});
 
 router.post('/selectlanguage',function(req,res,next){
- 
+  console.log(req.body.number);
    res.render("selectlang");
 
 })
@@ -53,6 +56,22 @@ router.get('/survey',function(req,res,next){
 
 router.get('/thanks',function(req,res,next){
   res.render("thanks");
+})
+
+router.post('/check/:num',function(req,res,next){
+  var phoneno =  /^[6-9]\d{9}$/gi;
+  var number = req.params.num;
+   if(number.match(phoneno)){
+    res.json({
+      valid:true
+    })
+   }
+   else{
+    res.json({
+      valid:false
+    })
+  
+   }
 })
 
 router.post('/test',async function(req,res,next){
